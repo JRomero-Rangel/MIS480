@@ -36,3 +36,9 @@ Median :182.6   Median : 7.907   TRUE :270
 Mean   :171.4   Mean   : 8.022                  
 3rd Qu.:212.5   3rd Qu.: 8.622                  
 Max.   :227.2   Max.   :14.313        
+
+#Creation of Subset- The Merging fo the data sets created a master data set including all
+#and was joined by the cateforized by the date and store number
+
+##Enterprise.Data Set Creation
+
