@@ -9,3 +9,5 @@ Colorado State University Global
 MIS480-1 Capstone - Business Analytics and Information Systems
 Dr. Lisa Bryan
 12/20/2021
+
+# planned content
