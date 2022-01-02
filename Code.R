@@ -6,7 +6,7 @@ library(lubridate)
 Sales.Data$Dept<-mdy(Sales.Data$Date)
 Features.data.set$Date<-mdy(Features.data.set$Date)
 
-;#Merging of the Data Sets
+#Merging of the Data Sets
 
 Master.Data<-merge(Store.Sales,Features.data.set, by ="Date","Store")
 View(Master.Data)
@@ -20,7 +20,7 @@ Date Store Weekly_Sales Temperature Fuel_Price      CPI Unemployment IsHoliday
 5 2010-01-10    13    1765584.5       68.74      2.853 126.2346        7.795     FALSE
 6 2010-01-10    14    1855703.7       70.58      2.707 182.7168        8.724     FALSE
 
-#Summary Statistics
+#Summary Statistics, Used to gain some insight on new dataset
 summary(Master.Data)
 Date                Store     Weekly_Sales      Temperature       Fuel_Price   
 Min.   :2010-01-10   Min.   : 1   Min.   : 209986   Min.   : -2.06   Min.   :2.513  
