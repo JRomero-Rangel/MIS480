@@ -13,6 +13,6 @@ Dr.Lisa Bryan
 
 ## Planned Content
 
-1. Data Set 
+1. Data Set (Manipulation,Merge,Cleaning)
 2. Regression
 3. Forecast
