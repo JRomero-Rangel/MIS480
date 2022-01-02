@@ -39,7 +39,19 @@ Max.   :227.2   Max.   :14.313
 
 #Creation of Subsets- The Merging fo the data sets created a master data set including all
 #and was joined by the cateforized by the date and store number
+
 #Store.Sales dataset will aggregale all of the department sales for a store der date
+Store.Sales<-aggregate(Sales.Data$Weekly_Sales, by=list(Sales.Data$Date, Sales.Data$Store),FUN=sum)
+
+> head(Store.Sales)
+Date Store Weekly_Sales
+1 2010-01-10     1      1453330
+2 2010-02-04     1      1594968
+3 2010-02-07     1      1492418
+4 2010-02-19     1      1611968
+5 2010-02-26     1      1409728
+6 2010-03-09     1      1540164
+
 
 ##Enterprise.Data Set Creation
 
