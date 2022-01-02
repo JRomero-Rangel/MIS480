@@ -37,8 +37,9 @@ Mean   :171.4   Mean   : 8.022
 3rd Qu.:212.5   3rd Qu.: 8.622                  
 Max.   :227.2   Max.   :14.313        
 
-#Creation of Subset- The Merging fo the data sets created a master data set including all
+#Creation of Subsets- The Merging fo the data sets created a master data set including all
 #and was joined by the cateforized by the date and store number
+#Store.Sales dataset will aggregale all of the department sales for a store der date
 
 ##Enterprise.Data Set Creation
 
