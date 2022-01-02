@@ -11,4 +11,8 @@ CSUGlobal
 
 Dr.Lisa Bryan
 
-## Planned content
+## Planned Content
+
+1. Data Set 
+2. Regression
+3. Forecast
