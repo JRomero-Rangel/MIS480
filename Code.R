@@ -43,7 +43,7 @@ Max.   :227.2   Max.   :14.313
 #Store.Sales dataset will aggregale all of the department sales for a store der date
 Store.Sales<-aggregate(Sales.Data$Weekly_Sales, by=list(Sales.Data$Date, Sales.Data$Store),FUN=sum)
 
-> head(Store.Sales)
+head(Store.Sales)
 Date Store Weekly_Sales
 1 2010-01-10     1      1453330
 2 2010-02-04     1      1594968
@@ -69,7 +69,8 @@ Group.1 Group.2 Group.3 Group.4  Group.5 Group.6       x
 
 #renaming of colums in Enterprise.Sales
 colnames(Enterprise.Sales)<-c("Date","Temperature","Store","Fuel_Price","CPI","Unemployment","Weekly_Sales")
-> head(Enterprise.Sales)
+
+head(Enterprise.Sales)
 Date Temperature Store Fuel_Price      CPI Unemployment Weekly_Sales
 1 2012-05-10       63.07     4      3.620 131.0757        3.879      2209835
 2 2012-12-10       57.11     4      3.603 131.1083        3.879      2133026
