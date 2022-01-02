@@ -79,5 +79,16 @@ Date Temperature Store Fuel_Price      CPI Unemployment Weekly_Sales
 5 2012-10-08       83.21     4      3.476 130.7562        4.077      2193368
 6 2012-07-09       82.09     4      3.709 130.9325        4.077      2125105
 > 
+#aggregate funtion will complite total enterprise sales data by date
 
+ Enterprise.Sales_Tot<-aggregate(Enterprise.Sales$Weekly_Sales, by=list(Enterprise.Sales$Date), FUN=sum)
+> colnames(Enterprise.Sales_Tot)<-c("Date","Weekly_Sales")
+> head(Enterprise.Sales_Tot)
+        Date Weekly_Sales
+1 2010-01-10     42239876
+2 2010-02-04     50423831
+3 2010-02-07     48917485
+4 2010-03-09     47194258
+5 2010-03-12     49909028
+6 2010-04-06     50188543
 > 
