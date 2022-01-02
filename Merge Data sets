@@ -1,0 +1,15 @@
+proc sort data=MIS480.FEATDATA out=work._tmpsort1_;
+	by Date Store;
+run;
+
+proc sort data=MIS480.SALESDATA out=work._tmpsort2_;
+	by Date Store;
+run;
+
+data MIS480.CombiData;
+	merge _tmpsort1_ _tmpsort2_;
+	by Date Store;
+run;
+
+proc delete data=work._tmpsort1_ work._tmpsort2_;
+run;
