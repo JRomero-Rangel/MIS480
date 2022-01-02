@@ -7,4 +7,8 @@ Module 7: CDC Assignment
 
 Jesus Romero Rangel
 
+CSUGlobal
+
+Dr.Lisa Bryan
+
 ## Planned content
