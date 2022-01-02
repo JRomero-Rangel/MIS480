@@ -43,7 +43,7 @@ Max.   :227.2   Max.   :14.313
 #Store.Sales dataset will aggregale all of the department sales for a store der date
 Store.Sales<-aggregate(Sales.Data$Weekly_Sales, by=list(Sales.Data$Date, Sales.Data$Store),FUN=sum)
 
-head(Store.Sales)
+> head(Store.Sales)
 Date Store Weekly_Sales
 1 2010-01-10     1      1453330
 2 2010-02-04     1      1594968
@@ -69,8 +69,7 @@ Group.1 Group.2 Group.3 Group.4  Group.5 Group.6       x
 
 #renaming of colums in Enterprise.Sales
 colnames(Enterprise.Sales)<-c("Date","Temperature","Store","Fuel_Price","CPI","Unemployment","Weekly_Sales")
-
-head(Enterprise.Sales)
+> head(Enterprise.Sales)
 Date Temperature Store Fuel_Price      CPI Unemployment Weekly_Sales
 1 2012-05-10       63.07     4      3.620 131.0757        3.879      2209835
 2 2012-12-10       57.11     4      3.603 131.1083        3.879      2133026
@@ -78,17 +77,8 @@ Date Temperature Store Fuel_Price      CPI Unemployment Weekly_Sales
 4 2012-03-08       83.86     4      3.374 130.7379        4.077      2174514
 5 2012-10-08       83.21     4      3.476 130.7562        4.077      2193368
 6 2012-07-09       82.09     4      3.709 130.9325        4.077      2125105
-> 
-#aggregate funtion will complite total enterprise sales data by date
 
- Enterprise.Sales_Tot<-aggregate(Enterprise.Sales$Weekly_Sales, by=list(Enterprise.Sales$Date), FUN=sum)
-> colnames(Enterprise.Sales_Tot)<-c("Date","Weekly_Sales")
-> head(Enterprise.Sales_Tot)
-        Date Weekly_Sales
-1 2010-01-10     42239876
-2 2010-02-04     50423831
-3 2010-02-07     48917485
-4 2010-03-09     47194258
-5 2010-03-12     49909028
-6 2010-04-06     50188543
-> 
+#Grpahical Representation of Data
+> ggplot(Enterprise.Sales_Tot, aes(x=Date)) +
+  +     geom_line(aes(y=Weekly_Sales), color = "#00AFBB") +
+  +     labs(y="Weekly Sales", x="Year")
